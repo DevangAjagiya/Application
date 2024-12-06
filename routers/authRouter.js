@@ -1,9 +1,10 @@
 const express = require('express');
 
+// Use authRouter instead of router
 const authRouter = express.Router();
 
-router.post('/singup', (req, res) => {
-  res.json({ message: 'singup Success' });
+authRouter.post('/signup', (req, res) => {
+  res.json({ message: 'Signup Success' });
 });
 
-module.exports= authRouter;  
+module.exports = authRouter;
